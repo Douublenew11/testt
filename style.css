@@ -1,0 +1,45 @@
+body {
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png);
+    background-size: cover;
+    opacity: 80%;
+}
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out; /* Efek transisi warna */
+}
+
+.navbar-nav .nav-link:hover {
+    color: yellow; /* Warna yang diinginkan saat dihover */
+}
+#biodata h1, #pendidikan h1, #hobbi h1 {
+    color: rgb(238, 241, 38);
+}
+#home {
+    color : white;
+}
+#home h1, h2, h5, p {
+    color: white;
+}
+h2 b {
+    color :rgb(238, 241, 38);
+}
+/* Custom style for image */
+.foto {
+  transition: transform 0.3s ease-in-out;
+  }
+
+  .foto:hover {
+  transform: scale(1.1);
+}
+
+.about a {
+    font-size : 20px
+}
+
+.link a:hover {
+    color : white;
+    background-color : gray;
+}
+
+#hobbi .container  ul li {
+    color : white;  
+}
