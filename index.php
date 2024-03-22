@@ -81,7 +81,7 @@
 
 <section id="biodata" class="py-3">
     <div class="container">
-        <h1>Biodata Saya</h1>
+        <h1 style="text-shadow: 4px 3px 2px gray"><b>Biodata Saya</b></h1>
         <?php foreach($biodata as $b): ?>
         <p><?= $b['nama'] ?></p>
         <p>Umur saya saat ini baru <?= $b['umur'] ?></p>
@@ -93,7 +93,7 @@
 
 <section id="pendidikan" class="py-3">
     <div class="container">
-        <h1>Riwayat Pendidikan</h1>
+        <h1 style="text-shadow: 4px 3px 2px gray"><b>Riwayat Pendidikan</b></h1>
         <?php foreach ($biodata as $b): ?>
         <p><?= $b['sd'] ?>(2011 - 2017)</p>
         <p><?= $b['smp'] ?>(2017 - 2018)</p>
@@ -106,10 +106,10 @@
 
 <section id="hobbi" class="py-2">
     <div class="container">
-        <h1>Hobi Saya</h1>
+        <h1 style="text-shadow: 4px 3px 2px gray"><b>Hobi Saya</b></h1>
         <?php foreach ($biodata as $b): ?>
         <ul>
-            <li style="color : white">Hobbi pertama saya <?= $b['hobbi'] ?></li>
+            <li style="color : white"> Hobbi pertama saya <?= $b['hobbi'] ?></li>
             <li>Hobbi kedua saya <?= $b['hobbi2'] ?></li>
         </ul>
         <?php endforeach ?>
@@ -118,7 +118,7 @@
 
 
 <section id="sosmed" class="py-3 mt-2">
-    <p style="color: white; font-size: 40px; text-align : center;"><b>Sosial Media</b></p>
+    <p style="color: white; font-size: 40px; text-align : center; text-shadow: 4px 3px 2px  gray"><b>Sosial Media</b></p>
         <div class="link mt-1 ms-3 text-center">
             <a href="https://www.instagram.com/markodap/" style="font-size: 45px; color: white" class="btn"><i class="fab fa-instagram"></i></a>
             <a href="https://wa.me/628979164178?" style="font-size: 45px; color: white" class="btn"><i class="bi bi-whatsapp"></i></a>
@@ -128,7 +128,7 @@
 
 <section class="py-3 mt-2">
     <div class="container">
-        <h1 style="color: white">Daftar Komentar</h1>
+        <h1 style="color: white; text-shadow: 3px 2px 1px  #005b8f">Daftar Komentar</h1>
         <?php
         // Lakukan koneksi ke database atau impor file koneksi jika diperlukan
         require "koneksi.php";
@@ -142,7 +142,7 @@
             // Tampilkan komentar
             while($row = mysqli_fetch_assoc($result)) {
                 ?>
-                <div class="card mb-3">
+                <div class="card mb-4" style="box-shadow : 10px 10px #005b8f ">
                     <div class="card-body">
                         <h5 class="card-title" style="color : black">Email: <?php echo $row['email']; ?></h5>
                         <p style="color : black" class="card-text">Komentar: <?php echo $row['komentar']; ?></p>
@@ -167,9 +167,9 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title mb-0 text-center" style="color: black; font-size: 30px">Form Komentar</h5>
+                <div class="card" style="box-shadow : 10px 10px #005b8f ">
+                    <div class="card-header" style="background : #005b8f">
+                        <h5 class="card-title mb-0 text-center" style="color: white; font-size: 30px;; text-shadow: 3px 2px 1px  black">Form Komentar</h5>
                     </div>
                     <div class="card-body">
                         <form id="comment-form" action="simpan_komentar.php" method="POST">
