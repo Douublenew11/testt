@@ -10,7 +10,7 @@
 
     if ($koneksi->query($sql) === TRUE) {
         // Menampilkan pesan sukses menggunakan JavaScript
-        echo "<script>alert('Komentar berhasil disimpan.');window.location.replace('index.php');</script>";
+        echo "<script>alert('Komentar berhasil disimpan.');window.location.replace('dexin.php');</script>";
     } else {
         // Menampilkan pesan gagal menggunakan JavaScript
         echo "<script>alert('Error: Gagal membuat komentar.');</script>";

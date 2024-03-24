@@ -1,5 +1,5 @@
 <?php
-require "../koneksi.php";
+require "koneksi.php";
 
 $id = $_GET['id'];
 $data = mysqli_query($koneksi, "SELECT * FROM biodata WHERE id='$id'");

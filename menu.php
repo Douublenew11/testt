@@ -42,7 +42,7 @@
   <div class="sidebar">
     <h2>This Menu</h2>
     <ul>
-      <li><a href="index.php">Home</a></li>
+      <li><a href="dexin.php">Home</a></li>
       <li><a href="data.php">Data</a></li>
       <li><a href="komentar.php">Komentar</a></li>
       <li><a href="logout.php" onclick="return confirm('Apakah Anda Yakin Akan Logout ?')">logout</a></li>

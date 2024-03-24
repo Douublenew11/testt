@@ -1,5 +1,5 @@
 <?php
-require "../koneksi.php";
+require "koneksi.php";
 
 $komen = query($koneksi, "SELECT * FROM komentar");
 

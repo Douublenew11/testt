@@ -1,8 +1,8 @@
 <?php
-require "../koneksi.php";
+require "koneksi.php";
 session_start();
 if(isset($_SESSION["login"])){
-    header("location: index.php");
+    header("location: dexin.php");
     exit; // Penting untuk menghentikan eksekusi script setelah pengalihan header
 }
 if(isset($_POST['login'])){
@@ -22,7 +22,7 @@ if(isset($_POST['login'])){
             $_SESSION['password'] = $password;
             $_SESSION['login'] = TRUE;
 
-            header("location: index.php");
+            header("location: dexin.php");
             exit; // Penting untuk menghentikan eksekusi script setelah pengalihan header
         } else {
             $_SESSION['error_login'] = 'Username atau Password salah!';

@@ -1,5 +1,5 @@
 <?php
-    require "../koneksi.php";
+    require "koneksi.php";
 
     $data = query($koneksi,"SELECT * FROM biodata");
 
